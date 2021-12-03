@@ -122,7 +122,8 @@
             this.cmbBxStringFormat.Items.AddRange(new object[] {
             resources.GetString("cmbBxStringFormat.Items"),
             resources.GetString("cmbBxStringFormat.Items1"),
-            resources.GetString("cmbBxStringFormat.Items2")});
+            resources.GetString("cmbBxStringFormat.Items2"),
+            resources.GetString("cmbBxStringFormat.Items3")});
             resources.ApplyResources(this.cmbBxStringFormat, "cmbBxStringFormat");
             this.cmbBxStringFormat.Name = "cmbBxStringFormat";
             // 

@@ -121,24 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="openToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open...</value>
-  </data>
-  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 22</value>
-  </data>
-  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Quit</value>
-  </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>File</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -163,6 +145,24 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="openToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Quit</value>
   </data>
   <data name="txtBxBytes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 8.25pt</value>
@@ -253,12 +253,15 @@
     <value>1</value>
   </data>
   <data name="cmbBxStringFormat.Items" xml:space="preserve">
-    <value>ASCII</value>
+    <value>RAW</value>
   </data>
   <data name="cmbBxStringFormat.Items1" xml:space="preserve">
-    <value>UTF8</value>
+    <value>ASCII</value>
   </data>
   <data name="cmbBxStringFormat.Items2" xml:space="preserve">
+    <value>UTF8</value>
+  </data>
+  <data name="cmbBxStringFormat.Items3" xml:space="preserve">
     <value>UNICODE(U16)</value>
   </data>
   <data name="cmbBxStringFormat.Location" type="System.Drawing.Point, System.Drawing">
@@ -305,6 +308,105 @@
   </data>
   <data name="&gt;&gt;grpBxStrings.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.Name" xml:space="preserve">
+    <value>txtBoxHash</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
+    <value>btnCopy</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnHash.Name" xml:space="preserve">
+    <value>btnHash</value>
+  </data>
+  <data name="&gt;&gt;btnHash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHash.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;btnHash.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.Name" xml:space="preserve">
+    <value>cmbBxHashCodings</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.Name" xml:space="preserve">
+    <value>cmbBoxHashes</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpBxHashing.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="grpBxHashing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 122</value>
+  </data>
+  <data name="grpBxHashing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 300</value>
+  </data>
+  <data name="grpBxHashing.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpBxHashing.Text" xml:space="preserve">
+    <value>Hashing</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.Name" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="txtBoxHash.Font" type="System.Drawing.Font, System.Drawing">
     <value>Consolas, 8.25pt</value>
@@ -473,33 +575,6 @@
   </data>
   <data name="&gt;&gt;cmbBoxHashes.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <data name="grpBxHashing.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="grpBxHashing.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 122</value>
-  </data>
-  <data name="grpBxHashing.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 300</value>
-  </data>
-  <data name="grpBxHashing.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="grpBxHashing.Text" xml:space="preserve">
-    <value>Hashing</value>
-  </data>
-  <data name="&gt;&gt;grpBxHashing.Name" xml:space="preserve">
-    <value>grpBxHashing</value>
-  </data>
-  <data name="&gt;&gt;grpBxHashing.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;grpBxHashing.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;grpBxHashing.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="cmbBxRep.Items" xml:space="preserve">
     <value>HEX</value>

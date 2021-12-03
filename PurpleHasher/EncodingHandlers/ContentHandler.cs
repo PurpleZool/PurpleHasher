@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace PurpleHasher.EncodingHandlers
 {
+    /// <summary>
+    /// Main object able to read any string or file , hash it and transform it to string again
+    /// </summary>
     public class ContentHandler
     {
 
@@ -16,7 +19,7 @@ namespace PurpleHasher.EncodingHandlers
         private byte[] hashedData;
 
 
-
+        #region CTORs
         public ContentHandler()
         {
 
@@ -25,8 +28,14 @@ namespace PurpleHasher.EncodingHandlers
         {
             this.rawData = rawData;
         }
+        #endregion
 
+        #region MAIN_METHODS
 
+        /// <summary>
+        /// Reads a file filling its raw data with the File's data.
+        /// </summary>
+        /// <param name="filePath">File's path to read</param>
         public void ReadFile(string filePath) 
         {
             using (Stream str = File.OpenRead(filePath))
@@ -38,11 +47,18 @@ namespace PurpleHasher.EncodingHandlers
             }                    
         }
 
-
-        public void ReadString(string str, int coding) 
+        /// <summary>
+        /// Transform desired string specifying the coding to use.
+        /// </summary>
+        /// <param name="str">String to decode</param>
+        /// <param name="coding">Coding type of string</param>
+        public void ReadString(string str, Codings coding) 
         {
-            switch ((Codings)coding)
+            switch (coding)
             { 
+                case Codings.RAW:
+                    rawData = RawToRaw(str);
+                    break;
                 case Codings.ASCII:
                     rawData = ASCIIToRaw(str);
                     break;
@@ -55,26 +71,11 @@ namespace PurpleHasher.EncodingHandlers
             }
         }
 
-        public string GetHashedString(Codings coding) 
-        {
-            switch (coding) 
-            {
-                case Codings.RAW:
-                    return HashedToHEX();
-                case Codings.ASCII:
-                    return HashedToASCII();
-                case Codings.UTF8:
-                    return HashedToUTF8();
-                case Codings.UTF16:
-                    return HashedToUnicode();
-                case Codings.NUM:
-                    return HashedToInt();
-                default:
-                    // No hay default :: Esto es un reloj
-                    return string.Empty;
-            }
-        }
 
+        /// <summary>
+        /// Fills the hashedData with the Hash of the rawData specifying the has to use.
+        /// </summary>
+        /// <param name="hash">Hash to compute</param>
         public void HashTo(Hashings hash) 
         {
             switch (hash) 
@@ -97,6 +98,36 @@ namespace PurpleHasher.EncodingHandlers
             } 
         }
 
+        /// <summary>
+        /// Retrieves the string from hashedData depending on coding used.
+        /// </summary>
+        /// <param name="coding"></param>
+        /// <returns></returns>
+        public string GetHashedString(Codings coding) 
+        {
+            switch (coding) 
+            {
+                case Codings.RAW:
+                    return HashedToHEX();
+                case Codings.ASCII:
+                    return HashedToASCII();
+                case Codings.UTF8:
+                    return HashedToUTF8();
+                case Codings.UTF16:
+                    return HashedToUnicode();
+                case Codings.NUM:
+                    return HashedToInt();
+                default:
+                    // No hay default :: Esto es un reloj
+                    return string.Empty;
+            }
+        }
+
+        /// <summary>
+        /// Retrieves the string from rawData depending on coding used.
+        /// </summary>
+        /// <param name="representation">Type of byte representation</param>
+        /// <returns></returns>
         public string GetRawString(ByteRep representation) 
         {
             switch (representation) 
@@ -111,11 +142,9 @@ namespace PurpleHasher.EncodingHandlers
             }
         }
 
-        public void SetRaw(byte[] rawData) 
-        {
-            this.rawData = rawData;
-        }
+        #endregion
 
+        #region TRANSFORMATIONS
         public void RawToMD5() 
         {
             hashedData = MD5Hash(rawData);
@@ -163,6 +192,16 @@ namespace PurpleHasher.EncodingHandlers
         {
             return RawToUnicode(hashedData);
         }
+        public byte[] RawToRaw(string hex)
+        {
+            hex = String.Concat(hex.Where(c => !Char.IsWhiteSpace(c)));
+            return Enumerable.Range(0, hex.Length)
+                     .Where(x => x % 2 == 0)
+                     .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
+                     .ToArray();
+        }
+
+        #endregion
 
         #region EncodingDecoding
 

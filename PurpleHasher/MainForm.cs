@@ -19,7 +19,6 @@ namespace PurpleHasher
 
         private ContentHandler contentHandler;
 
-
         public MainForm()
         {
             InitializeComponent();
@@ -60,9 +59,17 @@ namespace PurpleHasher
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            contentHandler.ReadString(txtBoxString.Text, cmbBxStringFormat.SelectedIndex + 1);
-            txtBxBytes.Text = contentHandler.GetRawString((ByteRep)cmbBxRep.SelectedIndex);
-            EnableControls(true);
+            try
+            {
+                contentHandler.ReadString(txtBoxString.Text, (Codings)(cmbBxStringFormat.SelectedIndex));
+                txtBxBytes.Text = contentHandler.GetRawString((ByteRep)cmbBxRep.SelectedIndex);
+                EnableControls(true);
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(this, ex.Message, "Input format error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
