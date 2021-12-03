@@ -122,13 +122,13 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>112, 22</value>
   </data>
   <data name="openToolStripMenuItem.Text" xml:space="preserve">
     <value>Open...</value>
   </data>
   <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>112, 22</value>
   </data>
   <data name="quitToolStripMenuItem.Text" xml:space="preserve">
     <value>Quit</value>
@@ -162,10 +162,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
+  </data>
+  <data name="txtBxBytes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
   </data>
   <data name="txtBxBytes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 27</value>
+    <value>293, 71</value>
   </data>
   <data name="txtBxBytes.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -175,7 +178,7 @@
     <value>Vertical</value>
   </data>
   <data name="txtBxBytes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 511</value>
+    <value>571, 345</value>
   </data>
   <data name="txtBxBytes.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -190,7 +193,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtBxBytes.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <metadata name="openFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
@@ -201,11 +204,89 @@
   <data name="openFileDialog.Title" xml:space="preserve">
     <value>Open File</value>
   </data>
+  <data name="btnInsert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 43</value>
+  </data>
+  <data name="btnInsert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 21</value>
+  </data>
+  <data name="btnInsert.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnInsert.Text" xml:space="preserve">
+    <value>Insert Text</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.Name" xml:space="preserve">
+    <value>btnInsert</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.Parent" xml:space="preserve">
+    <value>grpBxStrings</value>
+  </data>
+  <data name="&gt;&gt;btnInsert.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtBoxString.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="txtBoxString.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 17</value>
+  </data>
+  <data name="txtBoxString.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 20</value>
+  </data>
+  <data name="txtBoxString.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtBoxString.Name" xml:space="preserve">
+    <value>txtBoxString</value>
+  </data>
+  <data name="&gt;&gt;txtBoxString.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBoxString.Parent" xml:space="preserve">
+    <value>grpBxStrings</value>
+  </data>
+  <data name="&gt;&gt;txtBoxString.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmbBxStringFormat.Items" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="cmbBxStringFormat.Items1" xml:space="preserve">
+    <value>UTF8</value>
+  </data>
+  <data name="cmbBxStringFormat.Items2" xml:space="preserve">
+    <value>UNICODE(U16)</value>
+  </data>
+  <data name="cmbBxStringFormat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 43</value>
+  </data>
+  <data name="cmbBxStringFormat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 21</value>
+  </data>
+  <data name="cmbBxStringFormat.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbBxStringFormat.Name" xml:space="preserve">
+    <value>cmbBxStringFormat</value>
+  </data>
+  <data name="&gt;&gt;cmbBxStringFormat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBxStringFormat.Parent" xml:space="preserve">
+    <value>grpBxStrings</value>
+  </data>
+  <data name="&gt;&gt;cmbBxStringFormat.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="grpBxStrings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 27</value>
+    <value>11, 44</value>
   </data>
   <data name="grpBxStrings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 161</value>
+    <value>277, 72</value>
   </data>
   <data name="grpBxStrings.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -223,6 +304,255 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpBxStrings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtBoxHash.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Consolas, 8.25pt</value>
+  </data>
+  <data name="txtBoxHash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 46</value>
+  </data>
+  <data name="txtBoxHash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 221</value>
+  </data>
+  <data name="txtBoxHash.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="txtBoxHash.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtBoxHash.Name" xml:space="preserve">
+    <value>txtBoxHash</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;txtBoxHash.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnRefresh.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 273</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 273</value>
+  </data>
+  <data name="btnCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="btnCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnCopy.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Name" xml:space="preserve">
+    <value>btnCopy</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;btnCopy.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnHash.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 19</value>
+  </data>
+  <data name="btnHash.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 21</value>
+  </data>
+  <data name="btnHash.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnHash.Text" xml:space="preserve">
+    <value>Hash</value>
+  </data>
+  <data name="&gt;&gt;btnHash.Name" xml:space="preserve">
+    <value>btnHash</value>
+  </data>
+  <data name="&gt;&gt;btnHash.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHash.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;btnHash.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cmbBxHashCodings.Items" xml:space="preserve">
+    <value>RAW</value>
+  </data>
+  <data name="cmbBxHashCodings.Items1" xml:space="preserve">
+    <value>ASCII</value>
+  </data>
+  <data name="cmbBxHashCodings.Items2" xml:space="preserve">
+    <value>UTF8</value>
+  </data>
+  <data name="cmbBxHashCodings.Items3" xml:space="preserve">
+    <value>UNICODE(U16)</value>
+  </data>
+  <data name="cmbBxHashCodings.Items4" xml:space="preserve">
+    <value>NUMERIC</value>
+  </data>
+  <data name="cmbBxHashCodings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 273</value>
+  </data>
+  <data name="cmbBxHashCodings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 21</value>
+  </data>
+  <data name="cmbBxHashCodings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.Name" xml:space="preserve">
+    <value>cmbBxHashCodings</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;cmbBxHashCodings.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmbBoxHashes.Items" xml:space="preserve">
+    <value>MD5</value>
+  </data>
+  <data name="cmbBoxHashes.Items1" xml:space="preserve">
+    <value>SHA256</value>
+  </data>
+  <data name="cmbBoxHashes.Items2" xml:space="preserve">
+    <value>SHA512</value>
+  </data>
+  <data name="cmbBoxHashes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="cmbBoxHashes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="cmbBoxHashes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.Name" xml:space="preserve">
+    <value>cmbBoxHashes</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.Parent" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxHashes.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="grpBxHashing.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="grpBxHashing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 122</value>
+  </data>
+  <data name="grpBxHashing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 300</value>
+  </data>
+  <data name="grpBxHashing.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="grpBxHashing.Text" xml:space="preserve">
+    <value>Hashing</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.Name" xml:space="preserve">
+    <value>grpBxHashing</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpBxHashing.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cmbBxRep.Items" xml:space="preserve">
+    <value>HEX</value>
+  </data>
+  <data name="cmbBxRep.Items1" xml:space="preserve">
+    <value>NUMERIC</value>
+  </data>
+  <data name="cmbBxRep.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 44</value>
+  </data>
+  <data name="cmbBxRep.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 21</value>
+  </data>
+  <data name="cmbBxRep.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRep.Name" xml:space="preserve">
+    <value>cmbBxRep</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRep.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRep.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRep.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnRefreshRaw.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnRefreshRaw.Location" type="System.Drawing.Point, System.Drawing">
+    <value>411, 44</value>
+  </data>
+  <data name="btnRefreshRaw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="btnRefreshRaw.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnRefreshRaw.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefreshRaw.Name" xml:space="preserve">
+    <value>btnRefreshRaw</value>
+  </data>
+  <data name="&gt;&gt;btnRefreshRaw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefreshRaw.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRefreshRaw.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -232,7 +562,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>876, 545</value>
+    <value>876, 429</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>PurpleHasher</value>
