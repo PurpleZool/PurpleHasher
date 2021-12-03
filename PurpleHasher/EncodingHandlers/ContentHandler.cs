@@ -19,7 +19,27 @@ namespace PurpleHasher.EncodingHandlers
         {
 
         }
+        public ContentHandler(byte[] rawData)
+        {
+            this.rawData = rawData;
+        }
 
+
+        public void ReadFile(string filePath) 
+        {
+            using (Stream str = File.OpenRead(filePath))
+            {
+                using (BinaryReader br = new BinaryReader(str)) 
+                {
+                    rawData = br.ReadBytes((int)str.Length);
+                }
+            }                    
+        }
+
+        public void SetRaw(byte[] rawData) 
+        {
+            this.rawData = rawData;
+        }
 
         #region EncodingDecoding
 
@@ -67,6 +87,10 @@ namespace PurpleHasher.EncodingHandlers
             return new byte[] { };
         }
 
+        public string RawToHEX() 
+        {
+            return RawToHEX(this.rawData);
+        }
         public string RawToHEX(byte[] rawData)
         {
             StringBuilder sb = new StringBuilder();
@@ -89,14 +113,14 @@ namespace PurpleHasher.EncodingHandlers
 
         public byte[] SHA256Hash(byte[] rawData)
         {
-             SHA =  MD5.Create();
-            return md5.ComputeHash(rawData);
+             SHA256 sha256 =  SHA256.Create();
+            return sha256.ComputeHash(rawData);
         }
 
-        public byte[] MD5Hash(byte[] rawData)
+        public byte[] SHA512Hash(byte[] rawData)
         {
-            MD5 md5 =  MD5.Create();
-            return md5.ComputeHash(rawData);
+            SHA512 sha512 = SHA512.Create();
+            return sha512.ComputeHash(rawData);
         }
 
 
